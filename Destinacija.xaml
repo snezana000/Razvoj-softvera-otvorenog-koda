@@ -1,0 +1,31 @@
+<Window x:Class="Turisticka_agencija.Destinacija"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Turisticka_agencija"
+        mc:Ignorable="d"
+        Title="Destinacija" Height="450" Width="800" Icon="slike/travel icon 5.jpg">
+    <Window.Background>
+        <ImageBrush ImageSource="slike/travel 1.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="63,32,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial" RenderTransformOrigin="1.245,0.436"/>
+        <Label Content="Kod Države" HorizontalAlignment="Left" Margin="24,74,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Država" HorizontalAlignment="Left" Margin="45,116,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Mesto" HorizontalAlignment="Left" Margin="45,162,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Tip Odmora" HorizontalAlignment="Left" Margin="19,192,0,191" VerticalAlignment="Center" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Kontinent" HorizontalAlignment="Left" Margin="24,231,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <DataGrid x:Name="Grid" Margin="340,10,10,158" SelectionChanged="Grid_SelectionChanged"/>
+        <Button x:Name="btnDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="340,290,0,0" VerticalAlignment="Top" FontSize="30" Background="#FFCBBEA3" FontFamily="Arial" FontWeight="Medium" Width="108" Click="btnDodaj_Click" />
+        <Button x:Name="btnObrisi" Content="Obriši" HorizontalAlignment="Left" Margin="684,290,0,0" VerticalAlignment="Top" FontSize="30" Background="#FFCBBEA3" FontFamily="Arial" FontWeight="Medium" Width="100" Click="btnObrisi_Click"/>
+        <Button x:Name="btnIzmeni" Content="Izmeni" HorizontalAlignment="Left" Margin="512,290,0,0" VerticalAlignment="Top" FontSize="30" Background="#FFCBBEA3" FontFamily="Arial" FontWeight="Medium" Width="115" Click="btnIzmeni_Click"/>
+        <Button x:Name="btnNazad" Content="Nazad" HorizontalAlignment="Left" Margin="512,372,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Arial" Background="#FF38D7DA" FontWeight="Bold" Foreground="Black" Width="124" Click="btnNazad_Click"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" IsReadOnly="true" Margin="139,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBox x:Name="txtKodDrzave" HorizontalAlignment="Left" Margin="140,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBox x:Name="txtDrzava" HorizontalAlignment="Left" Margin="139,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBox x:Name="txtMesto" HorizontalAlignment="Left" Margin="140,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBox x:Name="txtTipOdmora" HorizontalAlignment="Left" Margin="139,200,0,191" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="20"/>
+        <TextBox x:Name="txtKontinent" HorizontalAlignment="Left" Margin="139,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+    </Grid>
+</Window>

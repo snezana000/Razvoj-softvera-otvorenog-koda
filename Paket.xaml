@@ -1,0 +1,35 @@
+<Window x:Class="Turisticka_agencija.Paket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Turisticka_agencija"
+        mc:Ignorable="d"
+        Title="Paket" Height="450" Width="800" Icon="slike/travel icon 1.jpg">
+    <Window.Background>
+        <ImageBrush ImageSource="slike/travel 7.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="42,40,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Kod Paketa" HorizontalAlignment="Left" Margin="30,73,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Naziv" HorizontalAlignment="Left" Margin="42,109,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Tip Paketa" HorizontalAlignment="Left" Margin="42,148,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Opis" HorizontalAlignment="Left" Margin="42,190,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Popust" HorizontalAlignment="Left" Margin="42,232,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <Label Content="Trajanje OD" HorizontalAlignment="Left" Margin="31,303,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial" />
+        <Label Content="Trajanje DO" HorizontalAlignment="Left" Margin="30,342,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
+        <DataGrid x:Name="Grid" Margin="290,23,27.6,161" SelectionChanged="Grid_SelectionChanged"/>
+        <Button x:Name="btnDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="290,277,0,0" VerticalAlignment="Top" FontSize="30" Width="108" Background="#FFCBBEA3" FontFamily="Arial" FontWeight="Medium" Click="btnDodaj_Click"/>
+        <Button x:Name="btnObrisi" Content="Obriši" HorizontalAlignment="Left" Margin="653,277,0,0" VerticalAlignment="Top" FontSize="30" Width="113" Background="#FFCBBEA3" FontFamily="Arial" FontWeight="Medium" Click="btnObrisi_Click"/>
+        <Button x:Name="btnIzmeni" Content="Izmeni" HorizontalAlignment="Left" Margin="473,277,0,0" VerticalAlignment="Top" FontSize="30" Width="117" Background="#FFCBBEA3" FontFamily="Arial" FontWeight="Medium" Click="btnIzmeni_Click"/>
+        <Button x:Name="btnNazad" Content="Nazad" HorizontalAlignment="Left" Margin="473,365,0,0" VerticalAlignment="Top" FontSize="36"  FontFamily="Arial" Background="#FF38D7DA" FontWeight="Bold" Foreground="Black" Click="btnNazad_Click" Width="131"/>
+        <DatePicker x:Name="DatePicker1" HorizontalAlignment="Left" Margin="165,309,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="DatePicker2" HorizontalAlignment="Left" Margin="165,342,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.518,1.618"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" IsReadOnly="true" Margin="147,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtKodPaketa" HorizontalAlignment="Left" Margin="147,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNaziv" HorizontalAlignment="Left" Margin="147,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTipPaketa" HorizontalAlignment="Left" Margin="147,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtOpis" HorizontalAlignment="Left" Margin="132,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPopust" HorizontalAlignment="Left" Margin="132,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Turisticka_agencija.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Turisticka_agencija"
+        mc:Ignorable="d"
+        Title="Turistička agencija" Height="400" Width="400" Icon="slike/travel icon 6.png">
+    <Window.Background>
+        <ImageBrush ImageSource="slike/travel 7.jpg"/>
+    </Window.Background>
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="270" VerticalAlignment="Top" Width="294" Margin="50,0,0,0">
+            <Label Content="Prijava" Margin="0,0,0.4,0" FontFamily="Ariel" FontSize="30" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Separator></Separator>
+            <Label Content="Korisničko ime:" FontFamily="Ariel" FontSize="20" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtImeKorisnika" Height="23" TextWrapping="Wrap" />
+            <Label Content="Lozinka:" FontFamily="Ariel" FontSize="20" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="DemiBold"/>
+            <PasswordBox x:Name="txtLozinka" Background="White"/>
+            <Button x:Name="btnPotvrdi" FontFamily="Ariel" FontSize="20" Background="#FF38D7DA" Content="Potvrdi" Margin="60 10" FontWeight="Bold" Click="btnPotvrdi_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

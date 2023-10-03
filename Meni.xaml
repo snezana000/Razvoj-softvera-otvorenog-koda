@@ -1,0 +1,20 @@
+﻿<Window x:Class="Turisticka_agencija.Meni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Turisticka_agencija"
+        mc:Ignorable="d"
+        Title="Meni" Height="450" Width="800" Icon="slike/travel icon 5.jpg">
+    <Window.Background>
+        <ImageBrush ImageSource="slike/travel 4.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Button x:Name="btnKlijent" Content="Klijent" HorizontalAlignment="Left" Margin="73,44,0,0" VerticalAlignment="Top" Height="46" Width="109" FontSize="20" FontFamily="Arial" Background="#FF38D7DA" FontWeight="Bold" Foreground="Black" Click="btnKlijent_Click"/>
+        <Button x:Name="btnUgovor" Content="Ugovor" HorizontalAlignment="Left" Margin="73,316,0,0" VerticalAlignment="Top" Height="46" Width="109" FontSize="20" FontFamily="Arial" Background="#FF38D7DA" FontWeight="Bold" Foreground="Black" Click="btnUgovor_Click"/>
+        <Button x:Name="btnPaket" Content="Paket" HorizontalAlignment="Left" Margin="73,104,0,0" VerticalAlignment="Top" Height="47" Width="109" FontSize="20" FontFamily="Arial" Background="#FF38D7DA" FontWeight="Bold" Foreground="Black" Click="btnPaket_Click"/>
+        <Button x:Name="btnHotel" Content="Hotel" HorizontalAlignment="Left" Margin="73,239,0,0" VerticalAlignment="Top" Height="47" Width="109" FontSize="20" FontFamily="Arial" Background="#FF38D7DA" FontWeight="Bold" Foreground="Black" Click="btnHotel_Click"/>
+        <Button x:Name="btnDestinacija" Content="Destinacija" HorizontalAlignment="Left" Margin="73,170,0,0" VerticalAlignment="Top" Height="48" Width="109" FontSize="20" FontFamily="Arial" Background="#FF38D7DA" FontWeight="Bold" Foreground="Black" Click="btnDestinacija_Click"/>
+        <Button x:Name="btnOdjaviSe" Content="Odjavi se" HorizontalAlignment="Left" Margin="657,14,0,0" VerticalAlignment="Top" Height="46" Width="109" FontSize="20" FontFamily="Arial" FontWeight="Black" Background="#FFFD3B06" Foreground="Black" Click="btnOdjaviSe_Click" />
+    </Grid>
+</Window>
